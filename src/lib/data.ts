@@ -1,3 +1,8 @@
+// GitHub Pages serves this site from a subpath (e.g. /Portfolio). NEXT_PUBLIC_BASE_PATH
+// is set at build time for that target only — see next.config.ts and the Pages workflow.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const withBasePath = (path: string) => `${basePath}${path}`;
+
 export const profile = {
   name: "Jatin Gehlot",
   role: "Full-Stack Developer",
@@ -7,7 +12,7 @@ export const profile = {
   email: "jatin.gehlot18@gmail.com",
   github: "https://github.com/JatinGehlot18",
   linkedin: "https://www.linkedin.com/in/jatin-gehlot/",
-  resumeUrl: "/Jatin_Gehlot_Resume.pdf",
+  resumeUrl: withBasePath("/Jatin_Gehlot_Resume.pdf"),
 };
 
 export type Experience = {
@@ -90,7 +95,7 @@ export type Project = {
   builtWithClaudeCode?: boolean;
 };
 
-export const projects: Project[] = [
+const rawProjects: Project[] = [
   {
     name: "Homelab",
     description:
@@ -175,6 +180,11 @@ export const projects: Project[] = [
     images: ["/projects/whatsapp-bot/whatsapp-bot.svg"],
   },
 ];
+
+export const projects: Project[] = rawProjects.map((project) => ({
+  ...project,
+  images: project.images?.map(withBasePath),
+}));
 
 export const skills: { category: string; items: string[] }[] = [
   {
