@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- KPI cards -->
+  <rect x="24" y="24" width="112" height="64" rx="10" fill="#14171a" stroke="#23272d" stroke-width="1.5" />
+  <text x="38" y="46" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" fill="#8b939c">Revenue</text>
+  <text x="38" y="68" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="700" fill="#34d399">$48.2K</text>
+
+  <rect x="144" y="24" width="112" height="64" rx="10" fill="#14171a" stroke="#23272d" stroke-width="1.5" />
+  <text x="158" y="46" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" fill="#8b939c">Impressions</text>
+  <text x="158" y="68" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="700" fill="#e8eaed">2.1M</text>
+
+  <rect x="264" y="24" width="112" height="64" rx="10" fill="#14171a" stroke="#23272d" stroke-width="1.5" />
+  <text x="278" y="46" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" fill="#8b939c">CTR</text>
+  <text x="278" y="68" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="700" fill="#e8eaed">3.4%</text>
+
+  <!-- Chart card -->
+  <rect x="24" y="100" width="352" height="116" rx="14" fill="#14171a" stroke="#23272d" stroke-width="1.5" />
+
+  <!-- Filter chips -->
+  <rect x="40" y="114" width="30" height="18" rx="9" fill="rgba(52,211,153,0.14)" />
+  <text x="55" y="126.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" font-weight="600" fill="#34d399">7D</text>
+  <rect x="76" y="114" width="34" height="18" rx="9" fill="#191c21" stroke="#23272d" />
+  <text x="93" y="126.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" fill="#8b939c">30D</text>
+  <rect x="116" y="114" width="34" height="18" rx="9" fill="#191c21" stroke="#23272d" />
+  <text x="133" y="126.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" fill="#8b939c">90D</text>
+
+  <!-- Area chart -->
+  <path d="M40 196 L40 188 L90 174 L140 182 L190 150 L240 158 L290 120 L340 128 L340 196 Z" fill="#34d399" fill-opacity="0.12" />
+  <path d="M40 188 L90 174 L140 182 L190 150 L240 158 L290 120 L340 128" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
